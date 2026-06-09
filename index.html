@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sanjai K - AI Engineer, Machine Learning Engineer, Data Scientist, and Computer Vision Researcher portfolio." />
+  <meta name="theme-color" content="#050816" />
+  <title>Sanjai K | AI Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__ring"></div>
+    <p>Loading portfolio</p>
+  </div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <div class="floating-sigils" aria-hidden="true">
+    <span>AI</span>
+    <span>ML</span>
+    <span>CV</span>
+    <span>NLP</span>
+    <span>U-Net</span>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="#home">
+        <span class="brand__mark">SK</span>
+        <span class="brand__text">
+          <strong>Sanjai K</strong>
+          <small>AI Engineer</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-panel" id="navPanel">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+        <span class="theme-toggle__icon" aria-hidden="true">Aa</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero__grid">
+        <div class="hero__content" data-reveal>
+          <p class="eyebrow">AI Engineer | Machine Learning Engineer | Data Scientist</p>
+          <h1>Hi, I&apos;m <span>Sanjai K</span></h1>
+          <h2>AI Engineer &amp; <br />Machine Learning Developer</h2>
+
+          <p class="hero__typing">
+            <span class="hero__typing-label">Building</span>
+            <span id="typedText" class="hero__typing-text"></span>
+            <span class="hero__caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero__summary">
+            MCA graduate passionate about transforming data into meaningful insights through intelligent AI systems, computer vision, deep learning, and research-driven problem solving.
+          </p>
+
+          <div class="hero__actions">
+          <a class="btn btn--primary" href="resume.pdf" download>Download Resume</a>
+            <a class="btn btn--secondary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="hero__socials" aria-label="Social links">
+            <a href="https://github.com/sanjaikmca" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/sanjai-k-9159a02a8/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="mailto:sanjaikumarmca@gmail.com">Email</a>
+          </div>
+
+          <div class="hero__stats">
+            <article class="stat-card">
+              <strong data-count="2">0</strong>
+              <span>Internships</span>
+            </article>
+            <article class="stat-card">
+              <strong data-count="3">0</strong>
+              <span>Core Projects</span>
+            </article>
+            <article class="stat-card">
+              <strong data-count="1">0</strong>
+              <span>IEEE Paper</span>
+            </article>
+            <article class="stat-card">
+              <strong data-count="9.3">0</strong>
+              <span>CGPA</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <div class="hero__portrait-wrap">
+            <div class="hero__halo"></div>
+            <div class="hero__orbit hero__orbit--one"></div>
+            <div class="hero__orbit hero__orbit--two"></div>
+            <img src="profile.jpg" alt="Sanjai K profile photo" class="hero__portrait" />
+          </div>
+          <div class="hero__signal hero__signal--one">TensorFlow</div>
+          <div class="hero__signal hero__signal--two">OpenCV</div>
+          <div class="hero__signal hero__signal--three">NLP</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section__header" data-reveal>
+        <p class="eyebrow">About Me</p>
+        <h3>Building intelligent systems with research-first thinking</h3>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__story glass-card" data-reveal>
+          <p>
+            I am an MCA graduate with hands-on experience in Machine Learning, Deep Learning, Computer Vision, and NLP. I enjoy solving real-world problems by creating intelligent AI systems.
+          </p>
+
+          <div class="strength-grid">
+            <span>Analytical Thinking</span>
+            <span>Research Mindset</span>
+            <span>Problem Solving</span>
+            <span>Fast Learning</span>
+            <span>Leadership</span>
+          </div>
+        </div>
+
+        <div class="about__cards">
+          <article class="info-card glass-card" data-reveal>
+            <span class="info-card__label">Education</span>
+            <h4>MCA</h4>
+            <p>Hindustan Institute of Technology &amp; Science</p>
+            <strong>CGPA: 9.3</strong>
+          </article>
+          <article class="info-card glass-card" data-reveal>
+            <span class="info-card__label">Education</span>
+            <h4>BCA</h4>
+            <p>Dr. M.G.R Chockalingam Arts College</p>
+            <strong>CGPA: 7.9</strong>
+          </article>
+          <article class="info-card info-card--wide glass-card" data-reveal>
+            <span class="info-card__label">Focus Areas</span>
+            <p>Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, and Medical AI Research.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section__header" data-reveal>
+        <p class="eyebrow">Experience</p>
+        <h3>Internships and applied AI work</h3>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline__item glass-card" data-reveal>
+          <div class="timeline__marker"></div>
+          <p class="timeline__date">Aug 2025 - Oct 2025</p>
+          <h4>Research Intern - Artificial Intelligence</h4>
+          <p class="timeline__org">Hindustan Institute of Technology &amp; Science</p>
+          <p>Built a Chest X-ray classification AI model using MobileNet, TensorFlow, and Grad-CAM.</p>
+        </article>
+
+        <article class="timeline__item glass-card" data-reveal>
+          <div class="timeline__marker"></div>
+          <p class="timeline__date">July 2025</p>
+          <h4>Data Science Intern</h4>
+          <p class="timeline__org">CodeAlpha Remote</p>
+          <p>Created prediction models, classification systems, and data analysis projects.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section__header" data-reveal>
+        <p class="eyebrow">Skills</p>
+        <h3>Interactive AI and engineering skill dashboard</h3>
+      </div>
+
+      <div class="skills__grid">
+        <article class="skill-card glass-card" data-reveal>
+          <h4>Programming</h4>
+          <div class="skill-list">
+            <div class="skill"><span>Python</span><div class="skill__bar"><i style="--skill: 95%"></i></div></div>
+            <div class="skill"><span>HTML</span><div class="skill__bar"><i style="--skill: 92%"></i></div></div>
+            <div class="skill"><span>CSS</span><div class="skill__bar"><i style="--skill: 90%"></i></div></div>
+            <div class="skill"><span>JavaScript</span><div class="skill__bar"><i style="--skill: 88%"></i></div></div>
+            <div class="skill"><span>MySQL</span><div class="skill__bar"><i style="--skill: 80%"></i></div></div>
+          </div>
+        </article>
+
+        <article class="skill-card glass-card" data-reveal>
+          <h4>AI / ML</h4>
+          <div class="tag-cloud">
+            <span>Machine Learning</span>
+            <span>Deep Learning</span>
+            <span>CNN</span>
+            <span>LSTM</span>
+            <span>U-Net</span>
+            <span>Transfer Learning</span>
+          </div>
+        </article>
+
+        <article class="skill-card glass-card" data-reveal>
+          <h4>Computer Vision</h4>
+          <div class="tag-cloud">
+            <span>OpenCV</span>
+            <span>Image Segmentation</span>
+            <span>Object Detection</span>
+          </div>
+        </article>
+
+        <article class="skill-card glass-card" data-reveal>
+          <h4>NLP</h4>
+          <div class="tag-cloud">
+            <span>Tokenization</span>
+            <span>Sentiment Analysis</span>
+            <span>Text Classification</span>
+          </div>
+        </article>
+
+        <article class="skill-card glass-card" data-reveal>
+          <h4>Libraries</h4>
+          <div class="tag-cloud">
+            <span>TensorFlow</span>
+            <span>Keras</span>
+            <span>Scikit-Learn</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Matplotlib</span>
+          </div>
+        </article>
+
+        <article class="skill-card glass-card" data-reveal>
+          <h4>Tools</h4>
+          <div class="tag-cloud">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Google Colab</span>
+            <span>Jupyter Notebook</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section__header" data-reveal>
+        <p class="eyebrow">Projects</p>
+        <h3>Premium project showcase with filtering</h3>
+      </div>
+
+      <div class="filter-bar" data-reveal>
+        <button class="filter-btn active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="medical-ai" type="button">Medical AI</button>
+        <button class="filter-btn" data-filter="computer-vision" type="button">Computer Vision</button>
+        <button class="filter-btn" data-filter="nlp" type="button">NLP</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card glass-card" data-tags="medical-ai computer-vision" data-title="Brain Tumor Segmentation MRI" data-tech="Deep U-Net, TensorFlow, OpenCV, Medical AI" data-description="Built a deep learning model trained on 3000+ MRI medical images for automatic brain tumor segmentation." data-features="Dice Loss, Adam Optimizer, Data Augmentation" data-reveal>
+          <div class="project-card__top">
+            <span class="badge">IEEE Published Research</span>
+            <span class="project-card__index">01</span>
+          </div>
+          <h4>Brain Tumor Segmentation MRI</h4>
+          <p>Built a deep learning model trained on 3000+ MRI medical images for automatic brain tumor segmentation.</p>
+          <div class="project-card__chips">
+            <span>Deep U-Net</span>
+            <span>TensorFlow</span>
+            <span>OpenCV</span>
+            <span>Medical AI</span>
+          </div>
+          <div class="project-card__actions">
+            <a class="btn btn--tiny" href="https://github.com/sanjaikmca" target="_blank" rel="noreferrer">GitHub</a>
+            <button class="btn btn--tiny btn--ghost open-project" type="button">View Details</button>
+          </div>
+        </article>
+
+        <article class="project-card glass-card" data-tags="medical-ai computer-vision" data-title="X-Ray Image Classification" data-tech="MobileNet, Transfer Learning" data-description="Medical AI classifier achieving 85-90% validation accuracy." data-features="Classification pipeline, transfer learning, performance evaluation" data-reveal>
+          <div class="project-card__top">
+            <span class="badge badge--cyan">Medical AI</span>
+            <span class="project-card__index">02</span>
+          </div>
+          <h4>X-Ray Image Classification</h4>
+          <p>Medical AI classifier achieving 85-90% validation accuracy.</p>
+          <div class="project-card__chips">
+            <span>MobileNet</span>
+            <span>Transfer Learning</span>
+          </div>
+          <div class="project-card__actions">
+            <a class="btn btn--tiny" href="https://github.com/sanjaikmca" target="_blank" rel="noreferrer">GitHub</a>
+            <button class="btn btn--tiny btn--ghost open-project" type="button">View Details</button>
+          </div>
+        </article>
+
+        <article class="project-card glass-card" data-tags="nlp computer-vision" data-title="Image Caption Generator" data-tech="VGG16 + LSTM" data-description="AI system combining Computer Vision and NLP to automatically generate image descriptions." data-features="8000+ image-caption pairs, sequence modeling, caption generation" data-reveal>
+          <div class="project-card__top">
+            <span class="badge badge--violet">AI + NLP</span>
+            <span class="project-card__index">03</span>
+          </div>
+          <h4>Image Caption Generator</h4>
+          <p>AI system combining Computer Vision and NLP to automatically generate image descriptions.</p>
+          <div class="project-card__chips">
+            <span>VGG16 + LSTM</span>
+            <span>8000+ pairs</span>
+          </div>
+          <div class="project-card__actions">
+            <a class="btn btn--tiny" href="https://github.com/sanjaikmca" target="_blank" rel="noreferrer">GitHub</a>
+            <button class="btn btn--tiny btn--ghost open-project" type="button">View Details</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section research" id="research">
+      <div class="section__header" data-reveal>
+        <p class="eyebrow">Research</p>
+        <h3>IEEE style publication showcase</h3>
+      </div>
+
+      <article class="research-card glass-card" data-reveal>
+        <div class="research-card__header">
+          <span class="badge badge--research">Published Research</span>
+          <span class="research-card__conference">ICCRTEE 2026</span>
+        </div>
+        <h4>Brain Tumor Segmentation Using Deep Learning</h4>
+        <p class="research-card__meta">IEEE Madras Section | IEEE Robotics and Automation Society</p>
+        <p>
+          A publication-focused project centered on medical AI segmentation, with a presentation-ready visual treatment inspired by journal paper formatting.
+        </p>
+      </article>
+    </section>
+
+    <section class="section achievements" id="achievements">
+      <div class="section__header" data-reveal>
+        <p class="eyebrow">Achievements</p>
+        <h3>Highlights that stand out to recruiters</h3>
+      </div>
+
+      <div class="achievement-grid">
+        <article class="achievement-card glass-card" data-reveal>
+          <strong>1</strong>
+          <h4>MCA Rank Holder</h4>
+          <p>CGPA 9.3/10</p>
+        </article>
+        <article class="achievement-card glass-card" data-reveal>
+          <strong>2</strong>
+          <h4>IEEE Published Researcher</h4>
+          <p>Research-first AI profile</p>
+        </article>
+        <article class="achievement-card glass-card" data-reveal>
+          <strong>3</strong>
+          <h4>IEEE Conference Presenter</h4>
+          <p>Research communication experience</p>
+        </article>
+        <article class="achievement-card glass-card" data-reveal>
+          <strong>4</strong>
+          <h4>National Hackathon Participant</h4>
+          <p>Competitive problem-solving mindset</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section__header" data-reveal>
+        <p class="eyebrow">Contact</p>
+        <h3>Let&apos;s build the next intelligent product together</h3>
+      </div>
+
+      <div class="contact__grid">
+        <form class="contact-form glass-card" id="contactForm" action="https://formspree.io/f/mojzwdlw" method="POST" novalidate data-reveal>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" id="name" placeholder="Your name" autocomplete="name" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" id="email" placeholder="you@example.com" autocomplete="email" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" id="message" rows="5" placeholder="Tell me about your project or opportunity"></textarea>
+          </label>
+          <button class="btn btn--primary" type="submit">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-card glass-card" data-reveal>
+          <h4>Direct details</h4>
+          <p>Email: <a href="mailto:sanjaikumarmca@gmail.com">sanjaikumarmca@gmail.com</a></p>
+          <p>GitHub: <a href="https://github.com/sanjaikmca" target="_blank" rel="noreferrer">github.com/sanjaikmca</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/sanjai-k-9159a02a8/" target="_blank" rel="noreferrer">linkedin.com/in/sanjai-k-9159a02a8</a></p>
+          <div class="contact-card__links">
+            <a class="btn btn--secondary btn--block" href="resume.pdf" download>Download Resume PDF</a>
+            <a class="btn btn--ghost btn--block" href="#home">Back to top</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Designed for GitHub Pages. Built with HTML5, CSS3, and Vanilla JavaScript.</p>
+  </footer>
+
+  <div class="project-modal" id="projectModal" aria-hidden="true">
+    <div class="project-modal__backdrop" data-close-modal></div>
+    <div class="project-modal__panel glass-card" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+      <button class="project-modal__close" type="button" data-close-modal aria-label="Close project details">&#215;</button>
+      <span class="badge" id="projectModalBadge">Project</span>
+      <h4 id="projectModalTitle"></h4>
+      <p id="projectModalTech" class="project-modal__tech"></p>
+      <p id="projectModalDesc"></p>
+      <div class="project-modal__features">
+        <strong>Highlights</strong>
+        <p id="projectModalFeatures"></p>
+      </div>
+      <a class="btn btn--primary" href="https://github.com/sanjaikmca" target="_blank" rel="noreferrer">Open GitHub</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
