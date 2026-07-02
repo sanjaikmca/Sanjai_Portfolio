@@ -467,20 +467,19 @@ header{
 }
 .profile-card{
 
-    width:370px;
-    height:370px;
-    position:relative;
-
+    width:380px;
+    height:450px;
+    overflow:hidden;
+    border-radius:25px;
 }
+
 .profile-card img{
 
     width:100%;
     height:100%;
     object-fit:cover;
-    border-radius:25px;   /* Square with rounded corners */
-    border:6px solid rgba(255,255,255,.1);
-    box-shadow:var(--shadow);
-
+    object-position:center top;
+    transform:scale(1.22);
 }
 .circle{
 
