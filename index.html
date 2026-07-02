@@ -1,446 +1,1635 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sanjai K - AI Engineer, Machine Learning Engineer, Data Scientist, and Computer Vision Researcher portfolio." />
-  <meta name="theme-color" content="#050816" />
-  <title>Sanjai K | AI Engineer Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sanjai K | Machine Learning Engineer</title>
+
+    <meta name="description"
+          content="Machine Learning Engineer | AI Engineer | IEEE Published Researcher">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Remix Icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+          rel="stylesheet">
+
+    <!-- AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
 </head>
+
 <body>
-  <div class="loader" id="loader" aria-hidden="true">
-    <div class="loader__ring"></div>
-    <p>Loading portfolio</p>
-  </div>
 
-  <div class="cursor-glow" aria-hidden="true"></div>
+<div class="blur blur1"></div>
 
-  <canvas id="particles" aria-hidden="true"></canvas>
+<div class="blur blur2"></div>
 
-  <div class="floating-sigils" aria-hidden="true">
-    <span>AI</span>
-    <span>ML</span>
-    <span>CV</span>
-    <span>NLP</span>
-    <span>U-Net</span>
-  </div>
+<header>
 
-  <header class="site-header">
-    <nav class="navbar">
-      <a class="brand" href="#home">
-        <span class="brand__mark">SK</span>
-        <span class="brand__text">
-          <strong>Sanjai K</strong>
-          <small>AI Engineer</small>
-        </span>
-      </a>
+<nav class="navbar">
 
-      <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<div class="logo">
 
-      <div class="nav-panel" id="navPanel">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#research" class="nav-link">Research</a>
-        <a href="#achievements" class="nav-link">Achievements</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </div>
+<h2>Sanjai<span>.</span></h2>
 
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
-        <span class="theme-toggle__icon" aria-hidden="true">Aa</span>
-      </button>
-    </nav>
-  </header>
+</div>
 
-  <main>
-    <section class="hero section" id="home">
-      <div class="hero__grid">
-        <div class="hero__content" data-reveal>
-          <p class="eyebrow">AI Engineer | Machine Learning Engineer | Data Scientist</p>
-          <h1>Hi, I&apos;m <span>Sanjai</span></h1>
-          <h2>AI Engineer &amp; <br />Machine Learning Developer</h2>
+<ul class="nav-links">
 
-          <p class="hero__typing">
-            <span class="hero__typing-label">Building</span>
-            <span id="typedText" class="hero__typing-text"></span>
-            <span class="hero__caret" aria-hidden="true"></span>
-          </p>
+<li><a href="#home">Home</a></li>
 
-          <p class="hero__summary">
-            MCA graduate passionate about transforming data into meaningful insights through intelligent AI systems, computer vision, deep learning, and research-driven problem solving.
-          </p>
+<li><a href="#about">About</a></li>
 
-          <div class="hero__actions">
-          <a class="btn btn--primary" href="resume.pdf" download>Download Resume</a>
-            <a class="btn btn--secondary" href="#projects">View Projects</a>
-            <a class="btn btn--ghost" href="#contact">Contact Me</a>
-          </div>
+<li><a href="#education">Education</a></li>
 
-          <div class="hero__socials" aria-label="Social links">
-            <a href="https://github.com/sanjaikmca" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/sanjai-k-9159a02a8/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="mailto:sanjaikumarmca@gmail.com">Email</a>
-          </div>
+<li><a href="#experience">Experience</a></li>
 
-          <div class="hero__stats">
-            <article class="stat-card">
-              <strong data-count="2">0</strong>
-              <span>Internships</span>
-            </article>
-            <article class="stat-card">
-              <strong data-count="3">0</strong>
-              <span>Core Projects</span>
-            </article>
-            <article class="stat-card">
-              <strong data-count="1">0</strong>
-              <span>IEEE Paper</span>
-            </article>
-            <article class="stat-card">
-              <strong data-count="9.42">0</strong>
-              <span>CGPA</span>
-            </article>
-          </div>
-        </div>
+<li><a href="#skills">Skills</a></li>
 
-        <div class="hero__visual" data-reveal>
-          <div class="hero__portrait-wrap">
-            <div class="hero__halo"></div>
-            <div class="hero__orbit hero__orbit--one"></div>
-            <div class="hero__orbit hero__orbit--two"></div>
-            <img src="profile.jpg" alt="Sanjai K profile photo" class="hero__portrait" />
-          </div>
-          <div class="hero__signal hero__signal--one">TensorFlow</div>
-          <div class="hero__signal hero__signal--two">OpenCV</div>
-          <div class="hero__signal hero__signal--three">NLP</div>
-        </div>
-      </div>
-    </section>
+<li><a href="#projects">Projects</a></li>
 
-    <section class="section about" id="about">
-      <div class="section__header" data-reveal>
-        <p class="eyebrow">About Me</p>
-        <h3>Building intelligent systems with research-first thinking</h3>
-      </div>
+<li><a href="#contact">Contact</a></li>
 
-      <div class="about__grid">
-        <div class="about__story glass-card" data-reveal>
-          <p>
-            I am an MCA graduate with hands-on experience in Machine Learning, Deep Learning, Computer Vision, and NLP. I enjoy solving real-world problems by creating intelligent AI systems.
-          </p>
+</ul>
 
-          <div class="strength-grid">
-            <span>Analytical Thinking</span>
-            <span>Research Mindset</span>
-            <span>Problem Solving</span>
-            <span>Fast Learning</span>
-            <span>Leadership</span>
-          </div>
-        </div>
+<div>
 
-        <div class="about__cards">
-          <article class="info-card glass-card" data-reveal>
-            <span class="info-card__label">Education</span>
-            <h4>MCA</h4>
-            <p>Hindustan Institute of Technology &amp; Science</p>
-            <strong>CGPA: 9.42</strong>
-          </article>
-          <article class="info-card glass-card" data-reveal>
-            <span class="info-card__label">Education</span>
-            <h4>BCA</h4>
-            <p>Dr. M.G.R Chockalingam Arts College</p>
-            <strong>79% (7.69 CGPA)</strong>
-          </article>
-          <article class="info-card info-card--wide glass-card" data-reveal>
-            <span class="info-card__label">Focus Areas</span>
-            <p>Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, and Medical AI Research.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+<a href="resume.pdf"
+   class="resume-btn"
+   download>
 
-    <section class="section experience" id="experience">
-      <div class="section__header" data-reveal>
-        <p class="eyebrow">Experience</p>
-        <h3>Internships and applied AI work</h3>
-      </div>
+Resume
 
-      <div class="timeline">
-        <article class="timeline__item glass-card" data-reveal>
-          <div class="timeline__marker"></div>
-          <p class="timeline__date">Aug 2025 - Oct 2025</p>
-          <h4>Research Intern - Artificial Intelligence</h4>
-          <p class="timeline__org">Hindustan Institute of Technology &amp; Science</p>
-          <p>Built a Chest X-ray classification AI model using MobileNet, TensorFlow, and Grad-CAM.</p>
-        </article>
+</a>
 
-        <article class="timeline__item glass-card" data-reveal>
-          <div class="timeline__marker"></div>
-          <p class="timeline__date">July 2025</p>
-          <h4>Data Science Intern</h4>
-          <p class="timeline__org">CodeAlpha Remote</p>
-          <p>Created prediction models, classification systems, and data analysis projects.</p>
-        </article>
-      </div>
-    </section>
+</div>
 
-    <section class="section skills" id="skills">
-      <div class="section__header" data-reveal>
-        <p class="eyebrow">Skills</p>
-        <h3>Interactive AI and engineering skill dashboard</h3>
-      </div>
+<div class="menu">
 
-      <div class="skills__grid">
-        <article class="skill-card glass-card" data-reveal>
-          <h4>Programming</h4>
-          <div class="skill-list">
-            <div class="skill"><span>Python</span><div class="skill__bar"><i style="--skill: 95%"></i></div></div>
-            <div class="skill"><span>HTML</span><div class="skill__bar"><i style="--skill: 92%"></i></div></div>
-            <div class="skill"><span>CSS</span><div class="skill__bar"><i style="--skill: 90%"></i></div></div>
-            <div class="skill"><span>JavaScript</span><div class="skill__bar"><i style="--skill: 88%"></i></div></div>
-            <div class="skill"><span>MySQL</span><div class="skill__bar"><i style="--skill: 80%"></i></div></div>
-          </div>
-        </article>
+<i class="ri-menu-3-line"></i>
 
-        <article class="skill-card glass-card" data-reveal>
-          <h4>AI / ML</h4>
-          <div class="tag-cloud">
-            <span>Machine Learning</span>
-            <span>Deep Learning</span>
-            <span>CNN</span>
-            <span>LSTM</span>
-            <span>U-Net</span>
-            <span>Transfer Learning</span>
-          </div>
-        </article>
+</div>
 
-        <article class="skill-card glass-card" data-reveal>
-          <h4>Computer Vision</h4>
-          <div class="tag-cloud">
-            <span>OpenCV</span>
-            <span>Image Segmentation</span>
-            <span>Object Detection</span>
-          </div>
-        </article>
+</nav>
 
-        <article class="skill-card glass-card" data-reveal>
-          <h4>NLP</h4>
-          <div class="tag-cloud">
-            <span>Tokenization</span>
-            <span>Sentiment Analysis</span>
-            <span>Text Classification</span>
-          </div>
-        </article>
+</header>
 
-        <article class="skill-card glass-card" data-reveal>
-          <h4>Libraries</h4>
-          <div class="tag-cloud">
-            <span>TensorFlow</span>
-            <span>Keras</span>
-            <span>Scikit-Learn</span>
-            <span>Pandas</span>
-            <span>NumPy</span>
-            <span>Matplotlib</span>
-          </div>
-        </article>
+<!-- ================= HERO ================= -->
 
-        <article class="skill-card glass-card" data-reveal>
-          <h4>Tools</h4>
-          <div class="tag-cloud">
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>Google Colab</span>
-            <span>Jupyter Notebook</span>
-          </div>
-        </article>
-      </div>
-    </section>
+<section id="home"
+         class="hero">
 
-    <section class="section projects" id="projects">
-      <div class="section__header" data-reveal>
-        <p class="eyebrow">Projects</p>
-        <h3>Premium project showcase with filtering</h3>
-      </div>
+<div class="hero-left"
+     data-aos="fade-right">
 
-      <div class="filter-bar" data-reveal>
-        <button class="filter-btn active" data-filter="all" type="button">All</button>
-        <button class="filter-btn" data-filter="medical-ai" type="button">Medical AI</button>
-        <button class="filter-btn" data-filter="computer-vision" type="button">Computer Vision</button>
-        <button class="filter-btn" data-filter="nlp" type="button">NLP</button>
-      </div>
+<p class="tag">
 
-      <div class="project-grid">
-        <article class="project-card glass-card" data-tags="medical-ai computer-vision" data-title="Brain Tumor Segmentation MRI" data-tech="Deep U-Net, TensorFlow, OpenCV, Medical AI" data-description="Built a deep learning model trained on 3000+ MRI medical images for automatic brain tumor segmentation." data-features="Dice Loss, Adam Optimizer, Data Augmentation" data-reveal>
-          <div class="project-card__top">
-            <span class="badge">IEEE Published Research</span>
-            <span class="project-card__index">01</span>
-          </div>
-          <h4>Brain Tumor Segmentation MRI</h4>
-          <p>Built a deep learning model trained on 3000+ MRI medical images for automatic brain tumor segmentation.</p>
-          <div class="project-card__chips">
-            <span>Deep U-Net</span>
-            <span>TensorFlow</span>
-            <span>OpenCV</span>
-            <span>Medical AI</span>
-          </div>
-          <div class="project-card__actions">
-            <a class="btn btn--tiny" href="https://github.com/sanjaikmca" target="_blank" rel="noreferrer">GitHub</a>
-            <button class="btn btn--tiny btn--ghost open-project" type="button">View Details</button>
-          </div>
-        </article>
+👋 Hello, I'm
 
-        <article class="project-card glass-card" data-tags="medical-ai computer-vision" data-title="X-Ray Image Classification" data-tech="MobileNet, Transfer Learning" data-description="Medical AI classifier achieving 85-90% validation accuracy." data-features="Classification pipeline, transfer learning, performance evaluation" data-reveal>
-          <div class="project-card__top">
-            <span class="badge badge--cyan">Medical AI</span>
-            <span class="project-card__index">02</span>
-          </div>
-          <h4>X-Ray Image Classification</h4>
-          <p>Medical AI classifier achieving 85-90% validation accuracy.</p>
-          <div class="project-card__chips">
-            <span>MobileNet</span>
-            <span>Transfer Learning</span>
-          </div>
-          <div class="project-card__actions">
-            <a class="btn btn--tiny" href="https://github.com/sanjaikmca" target="_blank" rel="noreferrer">GitHub</a>
-            <button class="btn btn--tiny btn--ghost open-project" type="button">View Details</button>
-          </div>
-        </article>
+</p>
 
-        <article class="project-card glass-card" data-tags="nlp computer-vision" data-title="Image Caption Generator" data-tech="VGG16 + LSTM" data-description="AI system combining Computer Vision and NLP to automatically generate image descriptions." data-features="8000+ image-caption pairs, sequence modeling, caption generation" data-reveal>
-          <div class="project-card__top">
-            <span class="badge badge--violet">AI + NLP</span>
-            <span class="project-card__index">03</span>
-          </div>
-          <h4>Image Caption Generator</h4>
-          <p>AI system combining Computer Vision and NLP to automatically generate image descriptions.</p>
-          <div class="project-card__chips">
-            <span>VGG16 + LSTM</span>
-            <span>8000+ pairs</span>
-          </div>
-          <div class="project-card__actions">
-            <a class="btn btn--tiny" href="https://github.com/sanjaikmca" target="_blank" rel="noreferrer">GitHub</a>
-            <button class="btn btn--tiny btn--ghost open-project" type="button">View Details</button>
-          </div>
-        </article>
-      </div>
-    </section>
+<h1>
 
-    <section class="section research" id="research">
-      <div class="section__header" data-reveal>
-        <p class="eyebrow">Research</p>
-        <h3>IEEE style publication showcase</h3>
-      </div>
+Sanjai K
 
-      <article class="research-card glass-card" data-reveal>
-        <div class="research-card__header">
-          <span class="badge badge--research">Published Research</span>
-          <span class="research-card__conference">ICCRTEE 2026</span>
-        </div>
-        <h4>Brain Tumor Segmentation Using Deep Learning</h4>
-        <p class="research-card__meta">IEEE Madras Section | IEEE Robotics and Automation Society</p>
+</h1>
+
+<h2>
+
+<span id="typing"></span>
+
+</h2>
+
+<p class="hero-text">
+
+Passionate Machine Learning Engineer with hands-on experience in
+Artificial Intelligence, Deep Learning, Computer Vision,
+Data Analytics and Data Engineering.
+
+IEEE Published Researcher focused on building
+real-world intelligent systems.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects"
+   class="primary-btn">
+
+View Projects
+
+</a>
+
+<a href="resume.pdf"
+   download
+   class="secondary-btn">
+
+Download Resume
+
+</a>
+
+</div>
+
+<div class="social-icons">
+
+<a href="https://github.com/sanjaikmca"
+   target="_blank">
+
+<i class="ri-github-fill"></i>
+
+</a>
+
+<a href="https://www.linkedin.com/in/sanjaikmca"
+   target="_blank">
+
+<i class="ri-linkedin-box-fill"></i>
+
+</a>
+
+<a href="mailto:sanjaikumarmca@gmail.com">
+
+<i class="ri-mail-fill"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-right"
+     data-aos="zoom-in">
+
+<div class="profile-card">
+
+<img src="profile.jpg"
+     alt="Sanjai">
+
+<div class="circle one"></div>
+
+<div class="circle two"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+<div class="stat-box">
+
+<h2 class="counter"
+    data-target="9.46">
+
+0
+
+</h2>
+
+<p>MCA CGPA</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2 class="counter"
+    data-target="3">
+
+0
+
+</h2>
+
+<p>AI Projects</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2 class="counter"
+    data-target="10">
+
+0
+
+</h2>
+
+<p>Certifications</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2 class="counter"
+    data-target="1">
+
+0
+
+</h2>
+
+<p>IEEE Publication</p>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="section-title"
+     data-aos="fade-up">
+
+<h2>
+
+About Me
+
+</h2>
+
+<p>
+
+Transforming ideas into intelligent AI solutions
+
+</p>
+
+</div>
+
+<div class="about-container">
+
+<div class="about-text"
+     data-aos="fade-right">
+
+<h3>
+
+Machine Learning Engineer
+
+</h3>
+
+<p>
+
+I'm an MCA graduate from
+
+<strong>Hindustan Institute of Technology & Science</strong>
+
+with a CGPA of
+
+<strong>9.46</strong>.
+
+</p>
+
+<p>
+
+My interests include
+
+Machine Learning,
+
+Deep Learning,
+
+Computer Vision,
+
+Data Engineering,
+
+Data Analytics,
+
+and Generative AI.
+
+</p>
+
+<p>
+
+I'm currently exploring
+
+<strong>
+
+Large Language Models (LLMs),
+
+Retrieval-Augmented Generation (RAG),
+
+LangChain,
+
+LangGraph,
+
+Hugging Face,
+
+AI Agents,
+
+and MLOps
+
+</strong>
+
+to build production-ready AI applications.
+
+</p>
+
+<div class="about-tags">
+
+<span>Python</span>
+
+<span>TensorFlow</span>
+
+<span>OpenCV</span>
+
+<span>Scikit-Learn</span>
+
+<span>SQL</span>
+
+<span>Power BI</span>
+
+<span>LLMs</span>
+
+<span>RAG</span>
+
+</div>
+
+</div>
+
+<div class="about-card"
+     data-aos="fade-left">
+
+<div class="glass">
+
+<h3>
+
+Quick Info
+
+</h3>
+
+<ul>
+
+<li>
+
+🎓 MCA Graduate (CGPA 9.46)
+
+</li>
+
+<li>
+
+📄 IEEE Published Researcher
+
+</li>
+
+<li>
+
+🏆 First Rank Holder
+
+</li>
+
+<li>
+
+💼 AI Research Intern
+
+</li>
+
+<li>
+
+📊 Data Science Intern
+
+</li>
+
+<li>
+
+📍 Chennai, India
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =======================================================
+                    EDUCATION SECTION
+======================================================== -->
+
+<section class="education section" id="education">
+
+    <div class="section-heading" data-aos="fade-up">
+
+        <span>Education</span>
+
+        <h2>My Academic Journey</h2>
+
         <p>
-          A publication-focused project centered on medical AI segmentation, with a presentation-ready visual treatment inspired by journal paper formatting.
+            A strong academic foundation combined with continuous
+            learning has shaped my passion for Artificial Intelligence
+            and Machine Learning.
         </p>
-      </article>
-    </section>
 
-    <section class="section achievements" id="achievements">
-      <div class="section__header" data-reveal>
-        <p class="eyebrow">Achievements</p>
-        <h3>Highlights that stand out to recruiters</h3>
-      </div>
-
-      <div class="achievement-grid">
-        <article class="achievement-card glass-card" data-reveal>
-          <strong>1</strong>
-          <h4>MCA Rank Holder</h4>
-          <p>CGPA 9.42/10</p>
-        </article>
-        <article class="achievement-card glass-card" data-reveal>
-          <strong>2</strong>
-          <h4>IEEE Published Researcher</h4>
-          <p>Research-first AI profile</p>
-        </article>
-        <article class="achievement-card glass-card" data-reveal>
-          <strong>3</strong>
-          <h4>IEEE Conference Presenter</h4>
-          <p>Research communication experience</p>
-        </article>
-        <article class="achievement-card glass-card" data-reveal>
-          <strong>4</strong>
-          <h4>National Hackathon Participant</h4>
-          <p>Competitive problem-solving mindset</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="section__header" data-reveal>
-        <p class="eyebrow">Contact</p>
-        <h3>Let&apos;s build the next intelligent product together</h3>
-      </div>
-
-      <div class="contact__grid">
-        <form class="contact-form glass-card" id="contactForm" action="https://formspree.io/f/mojzwdlw" method="POST" novalidate data-reveal>
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" id="name" placeholder="Your name" autocomplete="name" />
-          </label>
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" id="email" placeholder="you@example.com" autocomplete="email" />
-          </label>
-          <label>
-            <span>Message</span>
-            <textarea name="message" id="message" rows="5" placeholder="Tell me about your project or opportunity"></textarea>
-          </label>
-          <button class="btn btn--primary" type="submit">Send Message</button>
-          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-        </form>
-
-        <aside class="contact-card glass-card" data-reveal>
-          <h4>Direct details</h4>
-          <p>Email: <a href="mailto:sanjaikumarmca@gmail.com">sanjaikumarmca@gmail.com</a></p>
-          <p>GitHub: <a href="https://github.com/sanjaikmca" target="_blank" rel="noreferrer">github.com/sanjaikmca</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/sanjai-k-9159a02a8/" target="_blank" rel="noreferrer">linkedin.com/in/sanjaikmca</a></p>
-          <div class="contact-card__links">
-            <a class="btn btn--secondary btn--block" href="resume.pdf" download>Download Resume PDF</a>
-            <a class="btn btn--ghost btn--block" href="#home">Back to top</a>
-          </div>
-        </aside>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>Designed for GitHub Pages. Built with HTML5, CSS3, and Vanilla JavaScript.</p>
-  </footer>
-
-  <div class="project-modal" id="projectModal" aria-hidden="true">
-    <div class="project-modal__backdrop" data-close-modal></div>
-    <div class="project-modal__panel glass-card" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
-      <button class="project-modal__close" type="button" data-close-modal aria-label="Close project details">&#215;</button>
-      <span class="badge" id="projectModalBadge">Project</span>
-      <h4 id="projectModalTitle"></h4>
-      <p id="projectModalTech" class="project-modal__tech"></p>
-      <p id="projectModalDesc"></p>
-      <div class="project-modal__features">
-        <strong>Highlights</strong>
-        <p id="projectModalFeatures"></p>
-      </div>
-      <a class="btn btn--primary" href="https://github.com/sanjaikmca" target="_blank" rel="noreferrer">Open GitHub</a>
     </div>
-  </div>
 
-  <script src="script.js"></script>
+    <div class="timeline">
+
+        <!-- MCA -->
+
+        <div class="timeline-item left" data-aos="fade-right">
+
+            <div class="timeline-icon">
+                <i class="ri-graduation-cap-fill"></i>
+            </div>
+
+            <div class="timeline-content">
+
+                <span class="year">2024 - 2026</span>
+
+                <h3>Master of Computer Applications (MCA)</h3>
+
+                <h4>Hindustan Institute of Technology & Science</h4>
+
+                <p>
+                    CGPA : <strong>9.46 / 10</strong>
+                </p>
+
+                <div class="badge-group">
+
+                    <span>🥇 First Rank Holder</span>
+
+                    <span>📄 IEEE Published Research</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BCA -->
+
+        <div class="timeline-item right" data-aos="fade-left">
+
+            <div class="timeline-icon">
+                <i class="ri-book-open-fill"></i>
+            </div>
+
+            <div class="timeline-content">
+
+                <span class="year">2021 - 2024</span>
+
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+
+                <h4>Dr. M.G.R Chockalingam Arts College</h4>
+
+                <p>
+
+                    Percentage : <strong>79.62%</strong>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+                    EXPERIENCE
+======================================================== -->
+
+<section class="experience section" id="experience">
+
+    <div class="section-heading" data-aos="fade-up">
+
+        <span>Experience</span>
+
+        <h2>Professional Experience</h2>
+
+    </div>
+
+    <div class="experience-grid">
+
+        <!-- Internship -->
+
+        <div class="experience-card" data-aos="zoom-in">
+
+            <div class="exp-icon">
+
+                <i class="ri-brain-fill"></i>
+
+            </div>
+
+            <h3>
+
+                AI / ML Research Intern
+
+            </h3>
+
+            <h4>
+
+                Hindustan Institute of Technology & Science
+
+            </h4>
+
+            <small>
+
+                Aug 2025 – Oct 2025
+
+            </small>
+
+            <p>
+
+                Developed an AI-powered Chest X-ray Disease
+                Classification model using TensorFlow,
+                MobileNet and Grad-CAM.
+
+                Focused on Explainable AI
+                and Medical Image Analysis.
+
+            </p>
+
+        </div>
+
+        <!-- Internship -->
+
+        <div class="experience-card" data-aos="zoom-in" data-aos-delay="200">
+
+            <div class="exp-icon">
+
+                <i class="ri-line-chart-fill"></i>
+
+            </div>
+
+            <h3>
+
+                Data Science Intern
+
+            </h3>
+
+            <h4>
+
+                CodeAlpha
+
+            </h4>
+
+            <small>
+
+                July 2025
+
+            </small>
+
+            <p>
+
+                Built machine learning prediction models,
+                performed Exploratory Data Analysis,
+                Classification and Data Visualization using Python.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =======================================================
+                    SKILLS
+======================================================== -->
+
+<section class="skills section" id="skills">
+
+    <div class="section-heading" data-aos="fade-up">
+
+        <span>Technical Skills</span>
+
+        <h2>Technologies I Work With</h2>
+
+    </div>
+
+
+    <!-- Programming -->
+
+    <div class="skill-category">
+
+        <h3>
+            <i class="ri-code-s-slash-line"></i>
+            Programming Languages
+        </h3>
+
+        <div class="icon-grid">
+
+            <div class="icon-card">
+                <img src="https://skillicons.dev/icons?i=python">
+                <span>Python</span>
+            </div>
+
+            <div class="icon-card">
+                <img src="https://skillicons.dev/icons?i=cpp">
+                <span>C++</span>
+            </div>
+
+            <div class="icon-card">
+                <img src="https://skillicons.dev/icons?i=html">
+                <span>HTML</span>
+            </div>
+
+            <div class="icon-card">
+                <img src="https://skillicons.dev/icons?i=css">
+                <span>CSS</span>
+            </div>
+
+            <div class="icon-card">
+                <img src="https://skillicons.dev/icons?i=javascript">
+                <span>JavaScript</span>
+            </div>
+
+            <div class="icon-card">
+                <img src="https://skillicons.dev/icons?i=mysql">
+                <span>SQL</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- AI -->
+
+    <div class="skill-category">
+
+        <h3>
+
+            <i class="ri-cpu-fill"></i>
+
+            AI & Machine Learning
+
+        </h3>
+
+        <div class="icon-grid">
+
+            <div class="icon-card">
+                <img src="https://skillicons.dev/icons?i=tensorflow">
+                <span>TensorFlow</span>
+            </div>
+
+            <div class="icon-card">
+                <img src="https://skillicons.dev/icons?i=pytorch">
+                <span>PyTorch</span>
+            </div>
+
+            <div class="icon-card">
+                <img src="https://skillicons.dev/icons?i=opencv">
+                <span>OpenCV</span>
+            </div>
+
+            <div class="icon-card">
+                <img src="https://go-skill-icons.vercel.app/api/icons?i=sklearn">
+                <span>Scikit-Learn</span>
+            </div>
+
+            <div class="icon-card">
+                <img src="https://go-skill-icons.vercel.app/api/icons?i=pandas">
+                <span>Pandas</span>
+            </div>
+
+            <div class="icon-card">
+                <img src="https://go-skill-icons.vercel.app/api/icons?i=numpy">
+                <span>NumPy</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- GenAI -->
+
+    <div class="skill-category">
+
+        <h3>
+
+            <i class="ri-robot-2-fill"></i>
+
+            Generative AI
+
+        </h3>
+
+        <div class="tag-cloud">
+
+            <span>LLMs</span>
+
+            <span>RAG</span>
+
+            <span>LangChain</span>
+
+            <span>LangGraph</span>
+
+            <span>LlamaIndex</span>
+
+            <span>Hugging Face</span>
+
+            <span>Prompt Engineering</span>
+
+            <span>AI Agents</span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Data Engineering -->
+
+    <div class="skill-category">
+
+        <h3>
+
+            <i class="ri-database-2-fill"></i>
+
+            Data Engineering & Analytics
+
+        </h3>
+
+        <div class="tag-cloud">
+
+            <span>ETL</span>
+
+            <span>Power BI</span>
+
+            <span>Excel</span>
+
+            <span>Data Wrangling</span>
+
+            <span>Data Visualization</span>
+
+            <span>MySQL</span>
+
+            <span>Data Cleaning</span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Tools -->
+
+    <div class="skill-category">
+
+        <h3>
+
+            <i class="ri-tools-fill"></i>
+
+            Tools
+
+        </h3>
+
+        <div class="icon-grid">
+
+            <div class="icon-card">
+
+                <img src="https://skillicons.dev/icons?i=git">
+
+                <span>Git</span>
+
+            </div>
+
+            <div class="icon-card">
+
+                <img src="https://skillicons.dev/icons?i=github">
+
+                <span>GitHub</span>
+
+            </div>
+
+            <div class="icon-card">
+
+                <img src="https://skillicons.dev/icons?i=vscode">
+
+                <span>VS Code</span>
+
+            </div>
+
+            <div class="icon-card">
+
+                <img src="https://skillicons.dev/icons?i=docker">
+
+                <span>Docker</span>
+
+            </div>
+
+            <div class="icon-card">
+
+                <img src="https://skillicons.dev/icons?i=linux">
+
+                <span>Linux</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+                    FEATURED PROJECTS
+========================================================= -->
+
+<section class="projects section" id="projects">
+
+    <div class="section-heading" data-aos="fade-up">
+
+        <span>Portfolio</span>
+
+        <h2>Featured Projects</h2>
+
+        <p>
+            A collection of AI, Machine Learning, Computer Vision,
+            NLP and Data Engineering projects built to solve
+            real-world problems.
+        </p>
+
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- Project 1 -->
+
+        <div class="project-card" data-aos="zoom-in">
+
+            <div class="project-top">
+
+                <div class="project-icon">
+
+                    <i class="ri-brain-fill"></i>
+
+                </div>
+
+                <span class="project-type">
+
+                    IEEE Research
+
+                </span>
+
+            </div>
+
+            <h3>
+
+                Brain Tumor Segmentation using Deep U-Net
+
+            </h3>
+
+            <p>
+
+                Developed an automated brain tumor segmentation model
+                using Deep U-Net architecture on MRI scans.
+
+                The research was published under IEEE Madras Section.
+
+            </p>
+
+            <div class="project-tech">
+
+                <span>TensorFlow</span>
+
+                <span>OpenCV</span>
+
+                <span>Deep Learning</span>
+
+                <span>Medical AI</span>
+
+            </div>
+
+            <div class="project-buttons">
+
+                <a href="https://github.com/sanjaikmca"
+                   target="_blank">
+
+                    <i class="ri-github-fill"></i>
+
+                    GitHub
+
+                </a>
+
+                <a href="#research">
+
+                    <i class="ri-file-paper-fill"></i>
+
+                    Publication
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Project 2 -->
+
+        <div class="project-card" data-aos="zoom-in">
+
+            <div class="project-top">
+
+                <div class="project-icon">
+
+                    <i class="ri-heart-pulse-fill"></i>
+
+                </div>
+
+                <span class="project-type">
+
+                    Computer Vision
+
+                </span>
+
+            </div>
+
+            <h3>
+
+                Chest X-ray Disease Classification
+
+            </h3>
+
+            <p>
+
+                Built an explainable AI model using MobileNet,
+                TensorFlow and Grad-CAM for disease detection
+                from Chest X-ray images.
+
+            </p>
+
+            <div class="project-tech">
+
+                <span>TensorFlow</span>
+
+                <span>MobileNet</span>
+
+                <span>Grad-CAM</span>
+
+                <span>OpenCV</span>
+
+            </div>
+
+            <div class="project-buttons">
+
+                <a href="https://github.com/sanjaikmca"
+                   target="_blank">
+
+                    <i class="ri-github-fill"></i>
+
+                    GitHub
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Project 3 -->
+
+        <div class="project-card" data-aos="zoom-in">
+
+            <div class="project-top">
+
+                <div class="project-icon">
+
+                    <i class="ri-image-fill"></i>
+
+                </div>
+
+                <span class="project-type">
+
+                    Computer Vision + NLP
+
+                </span>
+
+            </div>
+
+            <h3>
+
+                Image Caption Generator
+
+            </h3>
+
+            <p>
+
+                Designed an AI-powered Image Caption Generator
+                using VGG16 and LSTM trained on the MS COCO dataset
+                to generate natural language image descriptions.
+
+            </p>
+
+            <div class="project-tech">
+
+                <span>VGG16</span>
+
+                <span>LSTM</span>
+
+                <span>NLP</span>
+
+                <span>Keras</span>
+
+            </div>
+
+            <div class="project-buttons">
+
+                <a href="https://github.com/sanjaikmca"
+                   target="_blank">
+
+                    <i class="ri-github-fill"></i>
+
+                    GitHub
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Project 4 -->
+
+        <div class="project-card upcoming" data-aos="zoom-in">
+
+            <div class="project-top">
+
+                <div class="project-icon">
+
+                    <i class="ri-robot-2-fill"></i>
+
+                </div>
+
+                <span class="project-type">
+
+                    Coming Soon
+
+                </span>
+
+            </div>
+
+            <h3>
+
+                LLM + RAG Chatbot
+
+            </h3>
+
+            <p>
+
+                Building an intelligent chatbot using
+                LangChain, Hugging Face, Retrieval-Augmented
+                Generation and Vector Databases.
+
+            </p>
+
+            <div class="project-tech">
+
+                <span>LLMs</span>
+
+                <span>LangChain</span>
+
+                <span>RAG</span>
+
+                <span>Hugging Face</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+                    IEEE RESEARCH
+========================================================= -->
+
+<section class="research section" id="research">
+
+    <div class="section-heading">
+
+        <span>Research</span>
+
+        <h2>IEEE Publication</h2>
+
+    </div>
+
+    <div class="research-box">
+
+        <div class="research-logo">
+
+            <i class="ri-book-open-fill"></i>
+
+        </div>
+
+        <div class="research-content">
+
+            <h3>
+
+                Automated Brain Tumor Segmentation in MRI Scans
+                using Deep U-Net Framework
+
+            </h3>
+
+            <p>
+
+                Published under the IEEE Madras Section and
+                presented at the International Conference on
+                Computing, Robotics, Renewable Energy and
+                Emerging Technologies (ICCRTEE 2026).
+
+            </p>
+
+            <div class="research-tags">
+
+                <span>IEEE</span>
+
+                <span>Medical AI</span>
+
+                <span>Deep Learning</span>
+
+                <span>Research</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+                    CERTIFICATIONS
+========================================================= -->
+
+<section class="certifications section" id="certifications">
+
+<div class="section-heading">
+
+<span>Certificates</span>
+
+<h2>Certifications & Achievements</h2>
+
+</div>
+
+<div class="certificate-grid">
+
+<div class="certificate-card">
+<i class="ri-award-fill"></i>
+<h3>MCA First Rank Holder</h3>
+<p>Academic Excellence Award</p>
+</div>
+
+<div class="certificate-card">
+<i class="ri-medal-fill"></i>
+<h3>MCA Second Rank Holder</h3>
+<p>Academic Achievement</p>
+</div>
+
+<div class="certificate-card">
+<i class="ri-book-fill"></i>
+<h3>IEEE Published Research</h3>
+<p>Medical AI Research Paper</p>
+</div>
+
+<div class="certificate-card">
+<i class="ri-presentation-fill"></i>
+<h3>IEEE Conference Presenter</h3>
+<p>ICCRTEE 2026</p>
+</div>
+
+<div class="certificate-card">
+<i class="ri-code-box-fill"></i>
+<h3>NPTEL Elite</h3>
+<p>Algorithms & Analysis</p>
+</div>
+
+<div class="certificate-card">
+<i class="ri-cloud-fill"></i>
+<h3>Cloud Computing</h3>
+<p>NPTEL</p>
+</div>
+
+<div class="certificate-card">
+<i class="ri-user-star-fill"></i>
+<h3>Soft Skills</h3>
+<p>NPTEL Elite</p>
+</div>
+
+<div class="certificate-card">
+<i class="ri-leaf-fill"></i>
+<h3>MongoDB</h3>
+<p>MongoDB Basics for Students</p>
+</div>
+
+<div class="certificate-card">
+<i class="ri-brain-fill"></i>
+<h3>AI Research Internship</h3>
+<p>Hindustan Institute of Technology & Science</p>
+</div>
+
+<div class="certificate-card">
+<i class="ri-database-2-fill"></i>
+<h3>SQL & Cloud Workshop</h3>
+<p>Data Analytics using SQL & Cloud Services</p>
+</div>
+
+<div class="certificate-card">
+<i class="ri-trophy-fill"></i>
+<h3>Intellithon'25</h3>
+<p>24-Hour National Hackathon</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+                    ACHIEVEMENTS
+========================================================= -->
+
+<section class="achievements section">
+
+<div class="section-heading">
+
+<span>Highlights</span>
+
+<h2>Achievements</h2>
+
+</div>
+
+<div class="achievement-grid">
+
+<div class="achievement-card">
+
+<h1>🥇</h1>
+
+<h3>First Rank Holder</h3>
+
+<p>MCA Final Year</p>
+
+</div>
+
+<div class="achievement-card">
+
+<h1>📄</h1>
+
+<h3>IEEE Published Researcher</h3>
+
+<p>Medical AI Research</p>
+
+</div>
+
+<div class="achievement-card">
+
+<h1>🎤</h1>
+
+<h3>Conference Presenter</h3>
+
+<p>ICCRTEE 2026</p>
+
+</div>
+
+<div class="achievement-card">
+
+<h1>💼</h1>
+
+<h3>AI Research Intern</h3>
+
+<p>Hands-on AI Development</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- =========================================================
+                    GITHUB
+========================================================= -->
+
+<section class="github section" id="github">
+
+    <div class="section-heading" data-aos="fade-up">
+
+        <span>GitHub</span>
+
+        <h2>Development Activity</h2>
+
+        <p>
+            A snapshot of my open-source contributions, repositories,
+            and programming languages.
+        </p>
+
+    </div>
+
+    <div class="github-wrapper">
+
+        <div class="github-card">
+
+            <img
+                src="https://github-readme-stats.vercel.app/api?username=sanjaikmca&show_icons=true&theme=tokyonight&hide_border=true"
+                alt="GitHub Stats">
+
+        </div>
+
+        <div class="github-card">
+
+            <img
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=sanjaikmca&layout=compact&theme=tokyonight&hide_border=true"
+                alt="Top Languages">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+                    CURRENT LEARNING
+========================================================= -->
+
+<section class="learning section">
+
+    <div class="section-heading">
+
+        <span>Learning Journey</span>
+
+        <h2>Currently Learning</h2>
+
+    </div>
+
+    <div class="learning-grid">
+
+        <div class="learning-card">
+            🤖
+            <h3>Large Language Models</h3>
+        </div>
+
+        <div class="learning-card">
+            🔍
+            <h3>Retrieval-Augmented Generation</h3>
+        </div>
+
+        <div class="learning-card">
+            🔗
+            <h3>LangChain</h3>
+        </div>
+
+        <div class="learning-card">
+            🦙
+            <h3>LlamaIndex</h3>
+        </div>
+
+        <div class="learning-card">
+            🤗
+            <h3>Hugging Face</h3>
+        </div>
+
+        <div class="learning-card">
+            ⚙️
+            <h3>MLOps</h3>
+        </div>
+
+        <div class="learning-card">
+            🐳
+            <h3>Docker</h3>
+        </div>
+
+        <div class="learning-card">
+            📊
+            <h3>Power BI</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+                    CONTACT
+========================================================= -->
+
+<section class="contact section" id="contact">
+
+    <div class="section-heading">
+
+        <span>Contact</span>
+
+        <h2>Let's Connect</h2>
+
+        <p>
+            I'm actively looking for opportunities as a Machine Learning Engineer,
+            AI Engineer, or Data Engineer. Feel free to reach out!
+        </p>
+
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <div class="contact-box">
+
+                <i class="ri-mail-fill"></i>
+
+                <h3>Email</h3>
+
+                <a href="mailto:sanjaikumarmca@gmail.com">
+
+                    sanjaikumarmca@gmail.com
+
+                </a>
+
+            </div>
+
+            <div class="contact-box">
+
+                <i class="ri-linkedin-box-fill"></i>
+
+                <h3>LinkedIn</h3>
+
+                <a href="https://www.linkedin.com/in/sanjaikmca"
+                   target="_blank">
+
+                    linkedin.com/in/sanjaikmca
+
+                </a>
+
+            </div>
+
+            <div class="contact-box">
+
+                <i class="ri-github-fill"></i>
+
+                <h3>GitHub</h3>
+
+                <a href="https://github.com/sanjaikmca"
+                   target="_blank">
+
+                    github.com/sanjaikmca
+
+                </a>
+
+            </div>
+
+            <div class="contact-box">
+
+                <i class="ri-global-fill"></i>
+
+                <h3>Portfolio</h3>
+
+                <a href="https://sanjaikmca.github.io/Sanjai_Portfolio/"
+                   target="_blank">
+
+                    Visit Portfolio
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="contact-action">
+
+            <h2>
+
+                Let's Build Something Amazing Together 🚀
+
+            </h2>
+
+            <p>
+
+                Whether it's an internship,
+                freelance work,
+                AI research,
+                or a full-time opportunity,
+                I'd love to collaborate.
+
+            </p>
+
+            <div class="contact-buttons">
+
+                <a href="resume.pdf"
+                   download
+                   class="primary-btn">
+
+                    <i class="ri-download-line"></i>
+
+                    Download Resume
+
+                </a>
+
+                <a href="mailto:sanjaikumarmca@gmail.com"
+                   class="secondary-btn">
+
+                    <i class="ri-send-plane-fill"></i>
+
+                    Hire Me
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+                    FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>Sanjai K</h2>
+
+        <p>
+
+            Machine Learning Engineer • AI Enthusiast • IEEE Published Researcher
+
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="https://github.com/sanjaikmca" target="_blank">
+                <i class="ri-github-fill"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sanjaikmca" target="_blank">
+                <i class="ri-linkedin-box-fill"></i>
+            </a>
+
+            <a href="mailto:sanjaikumarmca@gmail.com">
+                <i class="ri-mail-fill"></i>
+            </a>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2026 Sanjai K. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- Scroll To Top -->
+
+<button id="scrollTop">
+
+    <i class="ri-arrow-up-line"></i>
+
+</button>
+
+<!-- ================= LIBRARIES ================= -->
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+
+    duration:1000,
+
+    once:true
+
+});
+
+</script>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
